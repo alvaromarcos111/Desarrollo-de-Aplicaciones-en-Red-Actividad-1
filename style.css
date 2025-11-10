@@ -53,6 +53,7 @@ footer{
   justify-content: space-between;
   align-items: center;
 }
+
 footer section{
   margin-right: 1rem;
 }
@@ -77,8 +78,12 @@ footer section a img{
   align-items: center;
 }
 
-/*  Botón de https://uiverse.io/vinodjangid07/afraid-falcon-17 
-    he añadido la trasparencia, posición y la funcionalidad*/
+/*  
+  Botón de https://uiverse.io/vinodjangid07/afraid-falcon-17 
+  he añadido la trasparencia, la posición y la funcionalidad de subir
+  y de desaparecer y aparecer
+    
+*/
 .button {
   width: 100px;
   height: 100px;
@@ -134,7 +139,13 @@ footer section a img{
 }
 
 
-/* fondo de https://codepen.io/Pizzi/pen/ZYQdObp */
+/* 
+  fondo de https://codepen.io/Pizzi/pen/ZYQdObp 
+  tiene un error de origen, aparece una columna azul a la derecha, se ve mucho
+  con la preview con live server (extension VScode) pero en el navegador
+  no se ve si no se desliza.
+
+*/
 body{
   width:1000%;
   height:100%;
