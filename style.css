@@ -3,8 +3,9 @@ body{
   padding: 0;
 }
 
+
 header {
-  padding: 20px 40px;
+  padding: 30px 40px;
   background-color: rgba(58, 58, 58, 0.276);;
 }
 
@@ -32,6 +33,9 @@ section article {
 section article h2, section article p {
   margin: 1rem;
 }
+section article h2{
+  font-size: 130%;
+}
 
 section article:hover, header:hover, footer:hover {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.623);
@@ -50,15 +54,14 @@ footer{
   align-items: center;
 }
 footer section{
- float: right;
- margin-right: 1rem;
+  margin-right: 1rem;
 }
-footer section img{
+footer section a img{
   margin-right: 1rem;
 }
 
 * {
-  font-size: 100%;
+  font-size: 110%;
 }
 
 
@@ -67,9 +70,9 @@ footer section img{
 #volver {
   position: fixed;
   bottom: 20px;
-  left: 0;
-  right: 0;
-  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -77,8 +80,8 @@ footer section img{
 /*  Botón de https://uiverse.io/vinodjangid07/afraid-falcon-17 
     he añadido la trasparencia, posición y la funcionalidad*/
 .button {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: rgba(20, 20, 20, 0.9);
   border: none;
@@ -94,7 +97,7 @@ footer section img{
 }
 
 .svgIcon {
-  width: 12px;
+  width: 25px;
   transition-duration: 0.3s;
 }
 
@@ -118,7 +121,7 @@ footer section img{
 .button::before {
   position: absolute;
   bottom: -20px;
-  content: "Back to Top";
+  content: "Volver al inicio";
   color: white;
   font-size: 0px;
 }
@@ -145,3 +148,8 @@ body{
   /* Hasta aquí esta sacado de esa fuente */
 
 }
+
+
+
+
+
