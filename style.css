@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px 40px;
+  background-color: rgba(58, 58, 58, 0.276);;
+}
+
+header h1 {
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2.7em;
+}
+
+.contenedor {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section article {
+  background-color: rgba(58, 58, 58, 0.276);
+  margin: 1rem 0;
+  padding: 0.2rem 0;
+  border-radius: 0.5rem;
+}
+
+section article h2, section article p {
+  margin: 1rem;
+}
+
+section article:hover, header:hover, footer:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.623);
+  transition-duration: 0.3s;
+}
+
+section article h2 {
+  text-align: center;
+}
+
+footer{
+  padding: 20px 40px;
+  background-color: rgba(58, 58, 58, 0.276);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section{
+ float: right;
+ margin-right: 1rem;
+}
+footer section img{
+  margin-right: 1rem;
+}
+
+* {
+  font-size: 100%;
+}
+
+
+
+
+#volver {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Botón de https://uiverse.io/vinodjangid07/afraid-falcon-17 
+    he añadido la trasparencia, posición y la funcionalidad*/
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(20, 20, 20, 0.9);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.3);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+
+
+/* fondo de https://codepen.io/Pizzi/pen/ZYQdObp */
+body{
+  width:1000%;
+  height:100%;
+  background: #2A7B9B;
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  max-width:100vw;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Hasta aquí esta sacado de esa fuente */
+
+}
